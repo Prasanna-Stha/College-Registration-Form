@@ -1,0 +1,188 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.containerDiv {
+    width: 100%;
+    height: fit-content;
+    padding: 15px 0 25px 0;
+}
+
+.formParentBox {
+    margin: auto;
+    width: 100%;
+    height: fit-content;
+}
+
+.form {
+    width: 95%;
+    margin: auto;
+    padding: 30px;
+}
+
+.formTop {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+}
+
+.logo {
+    width: 150px;
+    margin: auto;
+}
+
+.logo img {
+    width: 100%;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.formDescription {
+    width: 100%;
+    padding: 10px;
+    background-color: #db231b;
+}
+
+.formDescription h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 24px;
+}
+
+.studentName {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.studentData {
+    width: 100%;
+    margin: 15px auto;
+    height: 30px;
+    padding: 5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border: 1px solid;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 14px;
+}
+
+.studentData:focus {
+    transition: .1s linear;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.studentData::placeholder {
+    color: grey;
+}
+
+.form {
+    box-shadow: grey .5px .5px 20px .5px;
+    border-radius: 10px;
+}
+
+.inputDescription {
+    color: #374151;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.submitBtn {
+    width: 50%;
+    margin: 15px auto;
+}
+
+.submitBtn button {
+    background-color: #db251b;
+    cursor: pointer;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 40px;
+    font-size: 17px;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+}
+
+.submitBtn button:hover {
+    background-color: white;
+    font-weight: 600;
+    color: #db231b;
+    border: 2px solid #db231b;
+    transition: .2s ease-in-out;
+}
+
+@media only screen and (min-width: 768px) {
+    .logo {
+        width: 150px;
+    }
+    .formTop {
+        flex-direction: row;
+        width: 95%;
+    }
+    .formDescription {
+        width: 80%;
+        margin: auto;
+    }
+    .formDescription h2 {
+        font-size: 32px;
+    }
+    .studentName {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contactField {
+        display: flex;
+        justify-content: space-between;
+    }
+    .name,
+    .studentContact,
+    .studentInfo {
+        margin: 20px;
+    }
+    .studentGrade,
+    .referencePerson,
+    .studentContact,
+    .name {
+        width: 32%;
+    }
+    .studentClg,
+    .referenceInfo {
+        width: 65%;
+    }
+    .studentData {
+        height: 40px;
+        margin: 0 auto;
+    }
+    .referencePerson,
+    .referenceInfo {
+        margin: 15px auto;
+    }
+    .studentResult,
+    .referenceBox {
+        display: flex;
+        justify-content: space-between;
+    }
+    .referenceBox {
+        padding: 15px;
+    }
+    .submitBtn {
+        width: 30%;
+    }
+}

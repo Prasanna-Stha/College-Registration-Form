@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form - College</title>
+    <link rel="stylesheet" href="registrationForm.css">
+</head>
+
+<body>
+    <div class="containerDiv">
+        <div class="formParentBox">
+            <div class="formTop">
+                <div class="logo">
+                    <img src="school_logo.png" alt="logo">
+                </div>
+                <div class="formDescription">
+                    <h2>Admission Inquiry Form</h2>
+                </div>
+            </div>
+            <div class="form">
+                <form action="#">
+                    <div class="studentName">
+                        <div class="f_Name name">
+                            <!-- First name -->
+                            <label for="fname" class="inputDescription">First Name*</label>
+                            <input type="text" name="fname" class="studentData" placeholder="Enter first name" autocomplete="off" required>
+                        </div>
+                        <div class="m_Name name">
+                            <label for="mname" class="inputDescription">Middle Name</label>
+                            <input type="text" name="mname" class="studentData" placeholder="Enter Middle name" autocomplete="off">
+                        </div>
+                        <div class="l_Name name">
+                            <label for="lname" class="inputDescription">Last Name*</label>
+                            <input type="text" name="lname" class="studentData" placeholder="Enter last name" autocomplete="off" required>
+                        </div>
+                    </div>
+                    <div class="contactField">
+                        <div class="emailField studentContact">
+                            <label for="email" class="inputDescription">E-mail*</label>
+                            <input type="email" name="email" class="studentData" placeholder="Enter E-mail" autocomplete="off" required>
+                        </div>
+                        <div class="contactNum studentContact">
+                            <label for="contactNum" class="inputDescription">Contact Number*</label>
+                            <input type="number" name="contactNum" class="studentData" placeholder="Enter Contact Number" autocomplete="off" required>
+                        </div>
+                        <div class="address studentContact">
+                            <label for="address" class="inputDescription">Address*</label>
+                            <input type="text" name="address" class="studentData" placeholder="Enter address" autocomplete="off" required>
+                        </div>
+                    </div>
+                    <div class="studentResult">
+                        <div class="studentGrade studentContact studentInfo">
+                            <label for="grade" class="inputDescription">10+2 grade*</label>
+                            <input type="text" name="grade" class="studentData" placeholder="Enter 10+2 grade" autocomplete="off" required>
+                        </div>
+                        <div class="studentClg studentContact studentInfo">
+                            <label for="stdClg" class="inputDescription">10+2 college*</label>
+                            <input type="text" name="stdClg" class="studentData" placeholder="Enter 10+2 college" autocomplete="off" required>
+                        </div>
+                    </div>
+                    <div class="referenceBox">
+                        <div class="referencePerson">
+                            <label for="referencePerson" class="inputDescription">Reference person name</label>
+                            <input type="text" name="referencePerson" class="studentData" placeholder="Enter reference person">
+                        </div>
+                        <div class="referenceInfo">
+                            <label for="referenceInfo" class="inputDescription">How did you know?</label>
+                            <input type="text" name="referencePerson" class="studentData" placeholder="Enter reference person">
+                        </div>
+                    </div>
+                    <div class="submitBtn">
+                        <button class="studentData">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
